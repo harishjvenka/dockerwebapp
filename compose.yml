@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: shaikmustafa/deepika:db
+    image: harishjangamx/flm-oct:dbimage
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: shaikmustafa/deepika:app
+    image: harishjangamx/flm-oct:javaapp
     ports:
       - "1111:8080"
     deploy:
